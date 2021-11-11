@@ -54,54 +54,63 @@ export const estilo = StyleSheet.create({
 
     },
     //Fim do Header #################################################
+
+
+
+    //Começo do Stories ################################################
     stories: {
 
     },
     titulostories: {
         color: '#989CAC',
         fontSize: 20,
-        margin: 10
+        margin: 25
     },
     scrollstories: {
 
     },
     imgstories: {
         width: 200,
-        height: 300,
-        resizeMode: 'contain',
-        borderRadius: 60,
+        height: 400,
+        resizeMode: 'cover',
+        borderRadius: 40,
         margin: 10
     },
     blackbox: {
         width: 80,
         height: 40,
-        borderRadius: 10,
+        borderRadius: 13,
         backgroundColor: '#090909',
         color: '#989CAC',
-        fontSize: 15,
+        fontSize: 10,
         top: 20,
         left: 20,
         position: 'absolute',
         zIndex: 1000,
-        padding: 10
+        padding: 10,
+        textAlign:'center'
 
     },
     redbox: {
         width: 80,
         height: 40,
-        borderRadius: 10,
+        borderRadius: 13,
         backgroundColor: '#600',
         color: '#989CAC',
-        fontSize: 15,
+        fontSize: 10,
         top: 20,
         left: 20,
         position: 'absolute',
         zIndex: 1000,
-        padding: 10
+        padding: 10,
+        alignItems:'center'
 
     },
     txticon: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginLeft:30,
+        alignItems:'center'
+
     },
     txt: {
         color: '#989CAC',
@@ -109,10 +118,89 @@ export const estilo = StyleSheet.create({
         fontSize: 10
     },
     icon: {
+        marginLeft:3,
         width: 18,
         height: 18,
         resizeMode: 'contain'
-    }
+    },
 
-    //Comeco do Stories
+    //Fim do Stories ###################################
+
+    //Começo do Trending ###############################
+    trending: {
+
+    },
+
+    trendingcxtitulo: {
+        flexDirection: 'row',
+        alignItems:'center',
+        marginTop:30,
+        marginBottom:30
+    },
+    tredingtitulo: {
+        fontSize: 30,
+        color: '#989CAC',
+        paddingLeft:10
+    },
+    trendingmore: {
+        width: 60,
+        height: 10,
+        resizeMode: "contain",
+        marginLeft:'Auto',
+        paddingRight:10
+    },
+    cxtredingdetalhe: {
+        backgroundColor: '#403D40',
+        borderRadius: 20,
+        padding: 10,
+        width:'90%',
+        marginLeft:'auto',
+        marginRight:'auto'
+    },
+    detalheimg: {
+        width: 340,
+        height: 170,
+        borderRadius: 10,
+        resizeMode: 'cover'
+    },
+    detalhelike: {
+        backgroundColor: '#ff6',
+        padding: 10,
+        borderWidth: 5,
+        borderColor: 'rgba(255,255,10,0.7)',
+        position: 'absolute',
+        zIndex: 1000,//empilhamento do onjeto
+        bottom:0,//bottom foi utilizado para mandaar o like para baixo
+        right:0,//right foi utilizado para mandaar o like para direita
+        borderBottomRightRadius:10,//borderBottomRightRadius foi usado para arredondar a borda do lado inferior direito
+        borderTopLeftRadius:10,//borderTopLeftRadius foi usado para arredondar a borda do lado superior esquerdo
+        textAlign:'center'
+    },
+    dedolike:{
+
+    },
+    trendinguser: {
+        flexDirection: 'row',
+        marginTop:10,
+        marginBottom:10,
+        
+    },
+    trendingusuarioimg: {
+        width: 50,
+        height: 50,
+        borderRadius: 800,
+        resizeMode: 'contain',
+        marginRight:10
+    },
+    trendingusuariotitulo: {
+        fontSize:20,
+        color:'#989CAC',
+        fontWeight:'bold'
+    },
+    treendingusuariosub: {
+        color:'#989cac'
+    },
+    trendinggobs: {
+        color:'#989cac'
+    },
 })
